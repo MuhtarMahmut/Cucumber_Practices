@@ -14,7 +14,8 @@ Feature: Google Seacrhes
     Then close browser
 
 
-    @samsung
+
+  @samsung
     Scenario: search samsung in google.
       Given chrome browser is set up
       When open the website

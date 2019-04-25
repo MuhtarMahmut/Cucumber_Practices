@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = {"Steps"},
         dryRun = false,
         tags = {"@userstory1"},
-        plugin = {}
+        plugin = {"html:Reports"}
                 )
 
 public class Runner1 {
