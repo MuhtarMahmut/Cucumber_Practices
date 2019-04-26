@@ -1,173 +1,354 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/google.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Features/scenarioOutlines.feature");
 formatter.feature({
-  "name": "Google Seacrhes",
+  "name": "data search in google.",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@userstory1"
+      "name": "@UserStory3"
     }
   ]
 });
-formatter.scenario({
-  "name": "search apple in google.",
+formatter.scenarioOutline({
+  "name": "search 20 datas from google",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@userstory1"
-    }
-  ]
+  "keyword": "Scenario Outline"
 });
 formatter.step({
-  "name": "chrome browser is set up",
+  "name": "user should go the website \u0027https://www.google.com\u0027",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "googlesearches.chrome_browser_is_set_up()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "open the website",
+  "name": "User Searches \u0027\u003cData\u003e\u0027",
   "keyword": "When "
 });
-formatter.match({
-  "location": "googlesearches.open_the_website()"
-});
-formatter.result({
-  "status": "passed"
-});
 formatter.step({
-  "name": "go to URL",
+  "name": "the data will dispay and browser closes",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "googlesearches.go_to_URL()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "page opens",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "googlesearches.page_opens()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seach box is empty",
-  "keyword": "But "
-});
-formatter.match({
-  "location": "googlesearches.seach_box_is_empty()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "type the keyword apple.",
-  "keyword": "* "
-});
-formatter.match({
-  "location": "googlesearches.type_the_keyword_apple()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "close browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "googlesearches.close_browser()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "search samsung in google.",
+formatter.examples({
+  "name": "",
   "description": "",
-  "keyword": "Scenario",
-  "tags": [
+  "keyword": "Examples",
+  "rows": [
     {
-      "name": "@userstory1"
+      "cells": [
+        "Data"
+      ]
     },
     {
-      "name": "@samsung"
+      "cells": [
+        "Apple"
+      ]
+    },
+    {
+      "cells": [
+        "Samsung"
+      ]
+    },
+    {
+      "cells": [
+        "Motorolla"
+      ]
+    },
+    {
+      "cells": [
+        "Nokia"
+      ]
+    },
+    {
+      "cells": [
+        "LG"
+      ]
+    },
+    {
+      "cells": [
+        "Sony"
+      ]
+    },
+    {
+      "cells": [
+        "BlackBerry"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
     }
   ]
 });
 formatter.step({
-  "name": "chrome browser is set up",
+  "name": "user should go the website \u0027https://www.google.com\u0027",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "googlesearches.chrome_browser_is_set_up()"
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "open the website",
+  "name": "User Searches \u0027Apple\u0027",
   "keyword": "When "
 });
 formatter.match({
-  "location": "googlesearches.open_the_website()"
+  "location": "ScenarioOutlines.user_Searches(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "go to URL",
+  "name": "the data will dispay and browser closes",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "googlesearches.go_to_URL()"
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
 formatter.step({
-  "name": "page opens",
-  "keyword": "And "
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "googlesearches.page_opens()"
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "seach box is empty",
-  "keyword": "But "
+  "name": "User Searches \u0027Samsung\u0027",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "googlesearches.seach_box_is_empty()"
+  "location": "ScenarioOutlines.user_Searches(String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "type the keyword samsung",
-  "keyword": "* "
-});
-formatter.match({
-  "location": "googlesearches.type_the_keyword_samsung()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "close browser",
+  "name": "the data will dispay and browser closes",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "googlesearches.close_browser()"
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Searches \u0027Motorolla\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_Searches(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the data will dispay and browser closes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Searches \u0027Nokia\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_Searches(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the data will dispay and browser closes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Searches \u0027LG\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_Searches(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the data will dispay and browser closes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Searches \u0027Sony\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_Searches(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the data will dispay and browser closes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "search 20 datas from google",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@UserStory3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user should go the website \u0027https://www.google.com\u0027",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_should_go_the_website(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User Searches \u0027BlackBerry\u0027",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ScenarioOutlines.user_Searches(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the data will dispay and browser closes",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "ScenarioOutlines.the_data_will_dispay_and_browser_closes()"
 });
 formatter.result({
   "status": "passed"

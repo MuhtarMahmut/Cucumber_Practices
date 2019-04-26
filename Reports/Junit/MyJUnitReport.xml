@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="15.059122">
+<testcase classname="Google Seacrhes" name="search apple in google." time="8.704992">
+<system-out><![CDATA[Given chrome browser is set up..............................................passed
+When open the website.......................................................passed
+Then go to URL..............................................................passed
+And page opens..............................................................passed
+But seach box is empty......................................................passed
+* type the keyword apple....................................................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Google Seacrhes" name="search samsung in google." time="6.35413">
+<system-out><![CDATA[Given chrome browser is set up..............................................passed
+When open the website.......................................................passed
+Then go to URL..............................................................passed
+And page opens..............................................................passed
+But seach box is empty......................................................passed
+* type the keyword samsung..................................................passed
+Then close browser..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

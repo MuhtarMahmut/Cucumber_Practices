@@ -1,0 +1,22 @@
+@userstory1
+Feature: Google Seacrhes
+
+  @userstory1
+  Scenario: search apple in google. [90m# Features/google.feature:6[0m
+    [32mGiven [0m[32mchrome browser is set up[0m  [90m# googlesearches.chrome_browser_is_set_up()[0m
+    [32mWhen [0m[32mopen the website[0m           [90m# googlesearches.open_the_website()[0m
+    [32mThen [0m[32mgo to URL[0m                  [90m# googlesearches.go_to_URL()[0m
+    [32mAnd [0m[32mpage opens[0m                  [90m# googlesearches.page_opens()[0m
+    [32mBut [0m[32mseach box is empty[0m          [90m# googlesearches.seach_box_is_empty()[0m
+    [32m* [0m[32mtype the keyword apple.[0m       [90m# googlesearches.type_the_keyword_apple()[0m
+    [32mThen [0m[32mclose browser[0m              [90m# googlesearches.close_browser()[0m
+
+  @userstory1 @samsung
+  Scenario: search samsung in google. [90m# Features/google.feature:19[0m
+    [32mGiven [0m[32mchrome browser is set up[0m    [90m# googlesearches.chrome_browser_is_set_up()[0m
+    [32mWhen [0m[32mopen the website[0m             [90m# googlesearches.open_the_website()[0m
+    [32mThen [0m[32mgo to URL[0m                    [90m# googlesearches.go_to_URL()[0m
+    [32mAnd [0m[32mpage opens[0m                    [90m# googlesearches.page_opens()[0m
+    [32mBut [0m[32mseach box is empty[0m            [90m# googlesearches.seach_box_is_empty()[0m
+    [32m* [0m[32mtype the keyword samsung[0m        [90m# googlesearches.type_the_keyword_samsung()[0m
+    [32mThen [0m[32mclose browser[0m                [90m# googlesearches.close_browser()[0m
